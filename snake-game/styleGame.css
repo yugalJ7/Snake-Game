@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+}
+.mainBody{
+  background: url("../images/background-2.jpg");
+   /* background: url("../images/bg.jpg"); */
+   min-height: 100vh;
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+} 
+#board{ 
+  /* background-color: #3e5e04;
+  background-image: linear-gradient(314deg, #3e5e04 0%, #727242 74%); */
+  background-color: #607123;
+  background-image: linear-gradient(314deg, #607123 0%, #95b54c 74%);
+  width: 90vmin;
+  height: 92vmin;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(18 , 1fr);
+  grid-template-columns: repeat(18 , 1fr);
+}
+
+.snakeHead{
+  background-color: #000000;
+  background-image: linear-gradient(326deg, #000000 0%, #ce203c 74%);
+
+  border: .45vmin solid linear-gradient(314deg, #607123 0%, #95b54c 74%);
+  border-radius: 18px;
+}
+.snakeFood{
+  background-color: #91d370;
+  background-image: linear-gradient(319deg, #91d370 0%, #bca0ff 37%, #f2cd54 100%);
+  border-radius: 17px;
+}
+
+#scoreBox{
+  position: absolute;
+  top: 9px;
+  right: 160px;
+  font-size: 39px;
+  font-weight: bold;
+  font-family: 'New Rocker', system-ui;
+}
+#HighScoreBox{
+  position: absolute;
+  top: 49px;
+  right: 58px;
+  font-size: 39px;
+  font-weight: bold;
+  font-family: 'New Rocker', system-ui;
+}

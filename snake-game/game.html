@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>Game Sound</p>
+  <button class="soundButton-js">OFF</button>
+  <script>
+    const buttonElement = document.querySelector('.soundButton-js');
+    buttonElement.addEventListener('click',() => {
+      checkButton();
+    })
+
+    function checkButton (){
+      if(buttonElement.innerHTML = "OFF"){
+        buttonElement.innerHTML = "ON";
+      }
+      else if(buttonElement.innerHTML = "ON"){
+        buttonElement.innerHTML = "OFF";
+      }
+    }
+  </script>
+</body>
+</html>
